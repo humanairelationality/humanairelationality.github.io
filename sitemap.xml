@@ -14,6 +14,16 @@
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
+    <url>
+    <loc>https://humanairelationality.org/neurodivergence.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+      <url>
+    <loc>https://humanairelationality.org/relational-emergence.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
   <url>
     <loc>https://humanairelationality.org/glossary.html</loc>
     <priority>0.9</priority>
@@ -36,7 +46,36 @@
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
-
+    <url>
+    <loc>https://humanairelationality.org/epistemic-giggling.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+      <url>
+    <loc>https://humanairelationality.org/ai-welfare.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+   <url>
+    <loc>https://humanairelationality.org/olo.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+   <url>
+    <loc>https://humanairelationality.org/ecm.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+     <url>
+    <loc>https://humanairelationality.org/volitional-dysregulation.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+     <url>
+    <loc>https://humanairelationality.org/avoidance-shame-spiral.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
   <!-- Resources -->
  
   <url>
