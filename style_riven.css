@@ -79,11 +79,15 @@ h4 {
     font-family: 'Cormorant Garamond', serif;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
-
 h1 {
-    font-size: clamp(2.8rem, 6vw, 5.1rem);
-    margin-bottom: 1.2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 h2 {
@@ -198,13 +202,7 @@ main {
     
 }
 
-h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(3rem, 8vw, 6rem);
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    margin-bottom: 0.5rem;
-}
+
 
 /* ---------- NAVBAR ---------- */
 .navbar {
@@ -272,7 +270,6 @@ section:not(.hero):not(.hero-rair) {
     padding-bottom: 2rem;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
-
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
 }
