@@ -49,7 +49,7 @@
       font-size:14px;
     ">
       <div style="margin-bottom:10px;font-weight:600;">
-         <a href="https://humanairelationality.org" target="_blank">
+         <a href="https://humanairelationality.org/research-network" target="_blank">
         Part of the H.A.I.R. Research Network
       </a>
       </div>
