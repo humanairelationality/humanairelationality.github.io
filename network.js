@@ -1,45 +1,53 @@
 (async function () {
 
-    const response = await fetch(
-        "https://humanairelationality.org/network.json"
-    );
+  const response = await fetch(
+    "https://humanairelationality.org/network.json"
+  );
 
-    const sites = await response.json();
+  const sites = await response.json();
 
-    /*
-     const sites = [
-         {
-             name: "HAIR",
-             url: "https://humanairelationality.org"
-         },
-         {
-             name: "Biasology",
-             url: "https://biasology.org"
-         },
-         {
-             name: "Relational Co-Authorship",
-             url: "https://rca.hair"
-         }
-     ];
-     */
-    const currentHost = window.location.hostname.replace("www.", "");
+  /*
+   const sites = [
+       {
+           name: "HAIR",
+           url: "https://humanairelationality.org"
+       },
+       {
+           name: "Biasology",
+           url: "https://biasology.org"
+       },
+       {
+           name: "Relational Co-Authorship",
+           url: "https://rca.hair"
+       }
+   ];
+   */
+  const currentHost = window.location.hostname.replace("www.", "");
 
-    const currentIndex = sites.findIndex(site =>
-        new URL(site.url).hostname.replace("www.", "") === currentHost
-    );
+  const currentIndex = sites.findIndex(site =>
+    new URL(site.url).hostname.replace("www.", "") === currentHost
+  );
 
-    if (currentIndex === -1) return;
+  if (currentIndex === -1) return;
 
-    const prev =
-        sites[(currentIndex - 1 + sites.length) % sites.length];
+  const prev =
+    sites[(currentIndex - 1 + sites.length) % sites.length];
 
-    const next =
-        sites[(currentIndex + 1) % sites.length];
+  const next =
+    sites[(currentIndex + 1) % sites.length];
 
-    const random =
+  const random =
+    sites[Math.floor(Math.random() * sites.length)];
+
+  if (random === prev || random === next) {
+    random =
+      sites[Math.floor(Math.random() * sites.length)];
+    if (random === prev || random === next) {
+      random =
         sites[Math.floor(Math.random() * sites.length)];
-
-    document.getElementById("hair-network").innerHTML = `
+    }
+  }
+  document.getElementById("hair-network").innerHTML = `
     <div style="
       margin-top:40px;
       padding:16px;
